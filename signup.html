@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+
+<body>
+
+    <!-- header section start -->
+    <header>
+        <div class="navbar">
+
+
+            <div class="nav-logo">
+                <div id="c">
+                    <h2>C</h2>
+                </div>
+                <div id="cc">
+                    <h2 id="calm">alm</h2>
+                    <h3>&</h3>
+                    <h2 id="code">ode</h2>
+                </div>
+            </div>
+
+
+            <div class="nav-opts">
+
+                <div class="opts">
+                    <p>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="">Home</a>
+                    </p>
+                    <div id="dropdown-list">
+                        <div id="dropdown-head">
+                            <i class="fa-solid fa-book-open"></i>
+                            <a>Courses</a>
+                            <i class="fa-solid fa-caret-down" id="arrow-btn1"></i>
+                        </div>
+                        <div id="list2">
+                            <ul>
+                                <li><a href="java-intro.html">Java</a></li>
+                                <li><a href="#">Oracle</a></li>
+                                <li><a href="#">HTML,CSS,JS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                    <div id="dropdown-list1">
+                        <div id="dropdown-head1">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <a>Roadmap</a>
+                            <i class="fa-solid fa-caret-down" id="arrow-btn2"></i>
+                        </div>
+                        <div id="list3">
+                            <ul>
+                                <li><a href="#">Java</a></li>
+                                <li><a href="#">Oracle</a></li>
+                                <li><a href="#">HTML,CSS,JS</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- <div id="dropdown-head1"> -->
+                    <p>
+                        <i class="fa-solid fa-tty"></i>
+                        <a href="">Contact</a>
+                    </p>
+
+                    <!-- </div> -->
+
+
+                </div>
+                <div id="div1">
+                    <div id="div2"></div>
+                    <div id="div3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+
+
+
+
+
+    <!-- main section start -->
+
+    <main>
+        <div class="main-sec">
+            <div id="login">
+                <h2 id="login-text">Sign up</h2>
+                <p id="message">Create an account</p>
+                <form id="myForm" method="post" action="">
+
+                    <div id="un">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" class="userinput" id="username" placeholder=" Username">
+                    </div><br>
+
+                    <div id="un">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="Email" class="userinput" id="username" placeholder=" Email">
+                    </div><br>
+
+                    <div id="un">
+                        <i class="fa-solid fa-user-lock"></i>
+                        <input type="password" name="password" class="userinput" id="password" placeholder=" Password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        <br><br>
+                    </div> <br>
+
+                    <div id="un">
+                        <i class="fa-solid fa-user-lock"></i>
+                        <input type="password" name="confirmpassword" class="userinput" id="confirmpassword"
+                            placeholder="Confirm Password"> <br><br>
+                    </div>
+
+
+                    <input type="submit" id="sub-btn" value="Submit">
+
+                    <section id="login-extra">
+                        <p>Or</p>
+
+                    </section>
+
+                    <a href=""> <input type="submit" id="sub-btn1" value="Sign up with google"> </a>
+
+                    <p id="signup-link"><span>Already have an account ? </span><a href="login.html">Log in</a></p>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- main section ends  -->
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <footer>
+        <div id="footer_banner">
+
+            <div class="banner1">
+                <h1>Join Us On</h1>
+                <span class="channel"></span>
+            </div>
+
+            <div class="banner2">
+                <div class="box">
+                    <i class="fa-brands fa-facebook" style="color: #0b5fef;"></i>
+                    <p>Facebook</p>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-instagram" style="color: #f04014;"></i>
+                    <p>Instagram</p>
+                </div>
+                <div class="box">
+                    <i class="fa-brands fa-telegram" style="color: #74C0FC;"></i>
+                    <p>Telegram</p>
+                </div>
+
+            </div>
+            <div id="footer">
+                <div class="nav-logo">
+                    <div id="c">
+                        <h2>C</h2>
+                    </div>
+                    <div id="cc">
+                        <h2 id="calm">alm</h2>
+                        <h3>&</h3>
+                        <h2 id="code">ode</h2>
+                    </div>
+                </div>
+                <ul>
+                    <p>More Details</p>
+                    <li><a href="">About</a></li>
+                    <li><a href="">privacy policy</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Term & condition</a></li>
+                </ul>
+                <ul>
+                    <p>Connect With Us</p>
+                    <li>
+                        <i class="fa-brands fa-facebook"></i>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="">Instagram</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-telegram"></i>
+                        <a href="">Telegram</a>
+                    </li>
+                </ul>
+
+            </div>
+            <p id="copyright">Copyright
+                <i class="fa-regular fa-copyright"></i> 2024
+            </p>
+
+        </div>
+
+
+    </footer>
+
+    <!-- footer section ends -->
+
+    <script src="signup.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+</head>
+
+<body>
+
+
+    <main>
+        <div id="login">
+            <h2 id="login-text">Sign up</h2>
+            <p id="message">Create an account</p>
+            <form id="myForm" method="post" action="">
+
+                <div id="un">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="username" class="userinput" id="username" placeholder=" Username">
+                </div><br>
+
+                <div id="un">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="Email" class="userinput" id="username" placeholder=" Email">
+                </div><br>
+
+                <div id="un">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <input type="password" name="password" class="userinput" id="password" placeholder=" Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    <br><br>
+                </div> <br>
+
+                <div id="un">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <input type="password" name="confirmpassword" class="userinput" id="confirmpassword"
+                        placeholder="Confirm Password"> <br><br>
+                </div>
+
+
+                <input type="submit" id="sub-btn" value="Submit">
+
+                <section id="login-extra">
+                    <p>Or</p>
+
+                </section>
+
+                <a href=""> <input type="submit" id="sub-btn1" value="Sign up with google"> </a>
+
+                <p id="signup-link"><span>Already have an account ? </span><a href="login.html">Log in</a></p>
+            </form>
+
+        </div>
+    </main>
+    <script src="signup.js"></script>
+</body>
+
+</html> -->
