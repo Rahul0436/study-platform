@@ -534,6 +534,52 @@
     font-size: 20px;
 }
 
+#pnbtn{
+    height: 60px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#prev{
+    height: 40px;
+    width: 100px;
+    /* border: 1px solid black; */
+    border-right: 7px solid #ff4747;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(3, 3, 34);
+    margin-left: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#prev a{
+    color: white;
+    text-decoration: none;
+}
+#next{
+    height: 40px;
+    width: 100px;
+   
+    /* border: 1px solid black; */
+    border-left: 7px solid #ff4747;
+   border-top-right-radius: 30px;
+   border-bottom-left-radius: 30px;
+   background-color: rgb(3, 3, 34);
+   margin-right: 30px;
+   color: white;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#next a{
+    color: white;
+    text-decoration: none;
+}
+
 /* main section end  */
 
 
