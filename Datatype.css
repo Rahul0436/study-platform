@@ -354,6 +354,18 @@
     padding: 30px;
     font-size: 20px;
 }
+
+#programming-sec{
+    height:300px ;
+    width: 93%;
+    border: 2px solid grey;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+   
+}
 #faq{
     cursor: pointer;
 }
