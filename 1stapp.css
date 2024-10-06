@@ -247,17 +247,27 @@
        overflow-x:hidden ;
        overflow-y: hidden;
        display: flex;
-       /* margin-top: 100px; */
        color: black;
        
 
    
 }
+#firstapplication{
+    height:200px;
+    width: 100%;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+#firstapplicationresult{
+    height:100px;
+    width: 100%;
+    margin-left: 140px;
+    margin-bottom: 200px;
+}
 
 #main-first{
     height: auto;
     width: 300px;
-    
     border: 1px solid black;
     border-bottom: none;
     text-align: center;
@@ -326,161 +336,83 @@
     padding: 30px;
     font-size: 20px;
 }
-#faq{
-    cursor: pointer;
-}
 
-#faq-one{
-    height: 40px;
-    width: 1000px;
-    border: 1px solid grey;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
+    
+#programming-sec{
+    height:300px ;
+    width: 93%;
+    border: 2px solid grey;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
    
 }
-#faq-one p{
- 
-    font-size: 20px;
-    letter-spacing: 1px;
+#note-sec{
+    height: auto;
+    width: 93%;
+    border-left: 5px solid #ff4747;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* border-radius: 20px; */
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: black;
 }
-#faq-one i{
-
+#classmember{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    
+}
+#classmemberimage{
+    height: 400px;
+    width: 90%;
+}
+#callingprocedure{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    
+}
+#callingprocedureimage{
+    height: 500px;
+    width: 100%;
+}
+#note-icon{
     font-size: 30px;
-    color: grey;    
-  
 }
-#faq-one-ans{
-    height:auto;
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 80px;
+#Note{
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#note-question{
     font-size: 20px;
-
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 10px;
+    text-decoration: double underline;
 }
-
-#faq-two{
-    height: 40px;
-    width: 1000px;
-    border: 1px solid grey;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-   
-}
-#faq-two p{
- 
+#note-answer{
+    font-weight: 500;
+    /* font-family: sans-serif; */
+    padding-left: 30px;
     font-size: 20px;
-    letter-spacing: 1px;
-}
-#faq-two i{
-
-    font-size: 30px;
-    color: grey;    
-  
-}
-#faq-two-ans{
-    height:auto;
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 80px;
-    font-size: 20px;
-
-}
-
-#faq-three{
-    height: 40px;
-    width: 1000px;
-    border: 1px solid grey;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-   
-}
-#faq-three p{
- 
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-#faq-three i{
-
-    font-size: 30px;
-    color: grey;    
-  
-}
-#faq-three-ans{
-    height:auto;
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 80px;
-    font-size: 20px;
-
-}
-
-
-#faq-four{
-    height: 40px;
-    width: 1000px;
-    border: 1px solid grey;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-   
-}
-#faq-four p{
- 
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-#faq-four i{
-
-    font-size: 30px;
-    color: grey;    
-  
-}
-#faq-four-ans{
-    height:auto;
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    padding-left: 10px;
-    padding-right: 80px;
-    font-size: 20px;
-
 }
 
 #pnbtn{
@@ -528,6 +460,8 @@
     color: white;
     text-decoration: none;
 }
+
+
 
 /* main section end  */
 

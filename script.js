@@ -1,18 +1,5 @@
 
-// const btn =document.getElementById("dark-light");
-// const body = document.querySelector("body");
-// let mode ="light";
-// btn.addEventListener("click",()=>{
-//     if(mode === "light"){
-//         mode = "dark";
-//         body.style.backgroundColor="black";
 
-//     }
-//     else {
-//         mode = "light";
-//         body.style.backgroundColor="white";
-//     }
-// });
 
 // js for auto typing start
 var typed = new Typed(".auto-type",{

@@ -112,8 +112,9 @@
                 <div id="topic">
                     <a href="java-intro.html">Java Introduction</a>
                     <a href="java-install.html">Installation </a>
+                    <a href="1stapp.html">1st application of java</a>
                     <a href="Datatype.html">Data Type</a>
-                    <a href="">Literal</a>
+                    
                 </div>
 
 
@@ -261,7 +262,7 @@
                     <p id="question"> Types of literal </p>
 
                     <ul id="answer">
-                        <p>Java supports seven types of literal , those are  </p>
+                        <p>Java supports seven types of literal , those are </p>
                         <li type="1">Integer </li>
                         <li type="1">Floating point</li>
                         <li type="1">Character </li>
@@ -276,13 +277,17 @@
                 </section>
 
                 <section>
-                    <p id="question">Integer data type & literals  </p>
+                    <p id="question">Integer data type & literals </p>
                     <ul id="answer">
-                        <li>To represent integer type variables and literals we have four data types  byte, short , int , long . </li>
+                        <li>To represent integer type variables and literals we have four data types byte, short , int ,
+                            long . </li>
                         <li>The data type int is the default data type for integer literal . </li>
-                        <li>It means if we type a integer number 10 then compiler and jvm consider it as int type  literal(value) . </li>
-                        <li>For example : <code> boolean b = 10; </code>// compile time error : int can not be converted to boolean </li>
-                        <li>To represent a integer number as byte or short or long type we must write some extra code in three ways 
+                        <li>It means if we type a integer number 10 then compiler and jvm consider it as int type
+                            literal(value) . </li>
+                        <li>For example : <code> boolean b = 10; </code>// compile time error : int can not be converted
+                            to boolean </li>
+                        <li>To represent a integer number as byte or short or long type we must write some extra code in
+                            three ways
                             <ul id="answer">
                                 <li>By using variable assignment </li>
                                 <li>By using cast operator</li>
@@ -290,83 +295,297 @@
                             </ul>
                         </li><br>
                         <li type="none">By using variable assignment
-                                <li><code>int i1 = 5; </code></li>
-                                <li><code>byte b1 = 10;</code></li>
-                                <li><code>short s1 = 20;</code></li>
-                                <li><code>long l1 = 30;</code></li>    
+                        <li type="none"><code>int i1 = 5; </code></li>
+                        <li type="none"><code>byte b1 = 10;</code></li>
+                        <li type="none"><code>short s1 = 20;</code></li>
+                        <li type="none"><code>long l1 = 30;</code></li>
                         </li><br>
-                        <li type="none">By using cast operator 
-                            <li><code>System.out.println(10);</code></li>
-                            <li><code>System.out.println((byte)20);</code></li>
-                            <li><code>System.out.println((short)30);</code></li>
-                            <li><code>System.out.println((long)40);</code></li>    
-                    </li><br>
-                    <li type="none">By using suffix character
-                        <li><code>long l2 = 10;</code></li>
-                        <li type="none">or</li>
-                        <li><code>long l3=10L;</code></li>
-                        <li type="none">or</li>
-                        <li><code>long l4 = 10l;</code></li>
-                            
-                </li>
+                        <li type="none">By using cast operator
+                        <li type="none"><code>System.out.println(10);</code></li>
+                        <li type="none"><code>System.out.println((byte)20);</code></li>
+                        <li type="none"><code>System.out.println((short)30);</code></li>
+                        <li type="none"><code>System.out.println((long)40);</code></li>
+                        </li><br>
+                        <li type="none">By using suffix character
+                        <li type="none"><code>long l2= 10;</code></li>
+                        <cite>or</cite>
+                        <li type="none"><code>long l3= 10L;</code></li>
+                        <cite>or</cite>
+                        <li type="none"><code>long l4= 10l;</code></li>
+                        <li type="none"><code> int i3 = 10L;</code><cite> error: incompatible types: possible lossy
+                                conversion from long to int </cite></li>
+                        <li type="none"><code>byte b3 = 10B; <cite>or</cite> byte b4 = 10b;</code><cite> error: ';'
+                                expected </cite></li>
+                        <li type="none"><code>short s3 = 10S; <cite>or</cite> short s4 = 10s;</code><cite> error: ';'
+                                expected </cite></li>
+
+
+
+                        </li>
                     </ul>
                 </section>
 
+                <section>
+                    <ul id="answer">
+                        <li type="none">We can not use suffix character for byte and short . we can represent a integer
+                            has byte or short type only in two ways.
+                        <li>Assignment operator </li>
+                        <li>Cast operator </li>
+                        </li>
+
+                        <li type="none">We can not assign any range integer to byte and short , it will show compile
+                            time error . </li>
+                        <li type="none">The assigned integer must be in the byte range (-128 to 127) and must be short
+                            in the short range (-32768 to 32767) .</li>
+
+                        <li>for example :
+                            <ul id="answer">
+                                <li type="none"><code>byte b1 = 15;</code></li>
+                                <li type="none"><code>short s = 50;</code></li>
+                                <li type="none"><code>byte b2 = 500;</code><cite> error: incompatible types: possible
+                                        lossy conversion from int to byte</cite></li>
+                                <li type="none"><code>short s2 = 50000;</code><cite> error: incompatible types: possible
+                                        lossy conversion from int to short</cite></li>
+                            </ul>
+                        </li>
+
+                        <li>Large integer number are also consider as int type .</li>
+                        <li>If this large integer number not in the range of int (-2147483648 to 2147483647 ) compiler
+                            through error " integer number to large" </li>
+                        <li>Even we assign large number to long type variable or even if we use long type cast operator
+                            , we will get compile time error "integer number too large".</li>
+                        <li>To solve this compile time error we must use suffix "L" or "l" .</li>
+                    </ul>
+
+                </section>
+
+                <div id="note-sec">
+                    <i class="fa-solid fa-file-pen" id="note-icon"></i>
+
+                    <ul id="Note">
+
+                        <ul id="note-answer">
+                            <li type="none">Storing mobile number , debit card , credit card , account number other
+                                number we must use long variable and the number must be suffix with "L " or "l" .</li>
+                        </ul>
+
+                    </ul>
+                </div>
 
                 <div id="faq">
 
                     <!-- question number one  -->
 
                     <div id="faq-one">
-                        <p>What is JDK ?</p>
+                        <p>What is the longest integer data type in Java ?</p>
                         <i class="fa-solid fa-circle-plus"></i>
                     </div>
                     <div id="faq-one-ans">
-                        <p>JDK stands for java developement kit , it internally contains JRE and JVM . The main job of
-                            jdk is used to provide all the tools to work with java language . </p>
+                        <p>A long data type takes up 64 bits of memory, holds the most integer values, and can be used
+                            for very large numbers, ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+                            . </p>
                     </div>
 
                     <!-- question number two  -->
 
                     <div id="faq-two">
-                        <p>Why is JVM not platform independent?</p>
+                        <p>What is the data type of integer in Java?</p>
                         <i class="fa-solid fa-circle-plus"></i>
                     </div>
                     <div id="faq-two-ans">
-                        <p>JVM is platform dependent because it takes java byte code and generates byte code for the
-                            current operating system.
-                            So Java software is platform dependent but Java language is platform independent because
-                            different operating system have different JVMs </p>
+                        <p>An integer type stores an integer number with no fractional or decimal places. Java has four
+                            integer types – byte, short, int, and long </p>
                     </div>
 
                     <!-- question number three  -->
 
                     <div id="faq-three">
-                        <p>What is JVM ?</p>
+                        <p>What is the purpose of integers in Java ?</p>
                         <i class="fa-solid fa-circle-plus"></i>
                     </div>
                     <div id="faq-three-ans">
-                        <p>JVM stands for java virtual machine it is the software in the form of interpreter written in
-                            c language through which we can execute java program . </p>
+                        <p>An integer in Java is a memory location that can hold an integer, a positive or negative
+                            non-decimal number. It is denoted by the keyword, 'int'. . </p>
                     </div>
 
 
                     <!-- question number four  -->
 
                     <div id="faq-four">
-                        <p>Java is a platform independent or not ?</p>
+                        <p>Is integer a keyword in Java ?</p>
                         <i class="fa-solid fa-circle-plus"></i>
                     </div>
                     <div id="faq-four-ans">
-                        <p>Yes, Java is a platform-independent programming language.because it uses a "Write Once, Run
-                            Anywhere" approach </p>
+                        <p>The int keyword is used to declare a variable that can hold a 32-bit signed two's complement
+                            integer. This keyword is also used to declare that a method returns a value of the primitive
+                            type int </p>
                     </div>
 
                 </div>
 
+                <section>
+                    <p id="question">Floating point data type and literals </p>
+                    <ul id="answer">
+                        <li>To represent floating point numbers java supports two data type , that is float and double .
+                        </li>
+                        <li>Double is the default data type . it means if we type a floating point number compiler and
+                            jvm reads this number as double . </li>
+                        <li>To represent a floating point number as float type we must write extra code in two ways .
+                            <ul id="answer">
+                                <li type="1">With cast operator </li>
+                                <li type="1">With suffix character </li>
+                                <p>for example :
+                                    <li type="none">
+                                        <code>float f1 = 10.0 ; <cite>error:incompatible types: possible lossy conversion from double to float</cite></code>
+                                    </li>
+                                    <li type="none">
+                                        <code>float f2 = 10.0f;<cite>(by using suffix character)</cite></code></li>
+                                    <li type="none">
+                                        <code>float f3 = (float)10.0;<cite>(by using cast operator )</cite></code></li>
+                                    <li type="none"><code>double d = 10.0;</code></li>
+
+                                </p>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <div id="note-sec">
+                    <i class="fa-solid fa-file-pen" id="note-icon"></i>
+
+                    <ul id="Note">
+
+                        <ul id="note-answer">
+                            <li type="none">We can not assign floating point number directly to float variable , we will
+                                get compile time error .</li>
+                        </ul>
+
+                    </ul>
+                </div>
+                <section>
+                    <p id="question">Character data type and literals </p>
+                    <ul id="answer">
+                        <li>Any single letter  or digit  or special character placed inside single quotes is called character .</li>
+                        <li>Every character by default is treated as char type to store a single character we must create char variable .</li>
+                        <ul>
+                            <p>For example :</p>
+                            <li type="none"><code>char ch1 = 'a';</code></li>
+                            <li type="none"><code>char ch2 = '1';</code></li>
+                            <li type="none"><code>char ch3 = '@';</code></li>
+                            <li type="none"><code>char ch4 = ' ';</code></li>
+                        </ul> 
+                        <li>In a c language char data type occupies 1 byte , because  it supports only ASCII  character set whose range is 0 to 255 .</li> 
+                        <li>In java char data type takes 2 bytes because  it supports  unicode  character set whose range is 0 to 65535 .</li>  
+                        <li>Java supports unicode character set for developing internationalization application(I18N).</li>
+                        <li>internationalization application means it supports display content in the current country native language  in which this application is run . </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p id="question">Boolean data type and literals </p>
+                    <ul id="answer">
+                        <li>To represent conditional or boolean value 'true' or 'false' in java we have a data type boolean . </li>
+                        <li>To store 'true' and 'false' we must create boolean type variable as shown below 
+                            <ul>
+                                <li type="none"><code>boolean b1 = true;</code></li>
+                                <li type="none"><code>boolean b2 = false;</code></li>
+                            </ul>
+                        </li>
+                        <li>In java , we can not use '1' as true and '0' as false we will get compile time error . 
+                            <ul id="answer">
+                                <li type="none"><code>boolean b3 = 1; </code><cite>error: incompatible types: int cannot be converted to boolean</cite></li>
+                                <li type="none"><code>boolean b4 = 0;</code><cite>error: incompatible types: int cannot be converted to boolean</cite></li>
+                            </ul>
+                        </li>
+                        <li>We can not use '0' or '1' as condition value . </li>
+                        <li>The range of boolean data type is true , false  and size is not fixed , inside jvm it may occupies 1 bit or 1 byte . </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p id="question">String data type and literals </p>
+                    <ul id="answer">
+                        <li>A sequence of characters placed inside double quotes is called string or string literals .
+                            <ul>
+                                <p>For example :</p>
+                                <li>"ram" is a litera .</li>
+                            </ul>
+                        </li>
+                    <li>To represent string  for creating a variable to store string literal we have a predefined class called String .
+                        <ul id="answer">
+                            <p>For example :</p>
+                            <li>String s1 = "ram";</li>
+                        </ul>
+
+                    </li>
+                    <li>String is not a keyword , it is predefined class available in java.lang package in jdk software . it is a referenced data type . </li>
+                    <li>For storing a name , course , dept , any  alphanumeric no like pan , engine no , bike no we must  use string data type variable . 
+                        <ul id="answer">
+                            <li type="none"><code>String name = "Ram" ;</code></li>
+                            <li type="none"><code>String course = "Sita";</code></li>
+                            <li type="none"><code>String bikeName = "Bajaj";</code></li>
+                            <li type="none"><code>String engNum = "ABCD123pq";</code></li>
+                            <li type="none"><code>String bikeNum = "TS09BJ999";</code></li>
+                        </ul>
+                    </li>
+                    <li>Inside double quotes " " we can place 0 to n number of character . </li>
+                    <li>Empty string literal is allowed .
+                        <ul id="answer">
+                            <li type="none"><code>String s1 = "";</code></li>
+                            <li type="none"><code>String s2 = " ";</code></li>
+                        
+                        </ul>
+                    </li>
+
+                    <li >The range of string no limit we can store any no.of character in double quotes.</li>
+                    <li>The default value of string is null . </li>
+
+                    </ul>
+                </section>
+
+                <section>
+                    <p id="question">Class Data type and literals  </p>
+                    <ul id="answer">
+                        <li>After compilation for every class we will get .class file .</li>
+                        <li>This .class file name it means classname .class is a literals in java program .</li>
+                        <li>For representing .class file name and for storing .class file name we must create a variable by using  the predefined  class called Class . it is available in java.lang package  in jdk software , below program shows .class file name in java program . 
+                            <ul  id="answer">
+                                <p>For example :</p>
+                                <li type="none"><code>Class c1 = String.class;</code></li>
+                                <li type="none"><code>Class c2 = Test09.class;</code></li>
+                            </ul>
+                        </li>
+                        <li>Every .class file name is a class type literal. </li>
+                        <li>To type class name .class , with this class name we must have .class file in the present working directory , else we will get compile time error  "can not find symbol".</li>
+                    </ul>
+                </section>
+                <section>
+                    <p id="question">Null literals  </p>
+                    <ul id="answer">
+                            <li>Null is a literal of any refferenced type . it means it does not have any specific type . </li>
+                            <li>Null is any refferenced type literal means it may be of array /class/interface /enum /anotation type .</li>
+                            <li>Null is used for Initializing any refferenced data type (class / array) type variable . </li>
+                            <li>Null does not have any specific type .</li>
+                            <li>We must assigned type to the null by using two ways 
+                                <ul id="answer">
+                                    <li type="1">By using assignment operator </li>
+                                    <li type="1">By using cast operator </li>
+                                    <li type="none">
+                                        <p>For example :</p>
+                                        <li  type="none"><code>String s = null;</code></li>
+                                        <li  type="none"><code>Integer i = null;</code></li>
+                                        <li  type="none"><code>Student s = null;</code></li>
+                                        <li  type="none"><code>int[] ia = null;</code></li>
+                                        <li  type="none"><code>Employee[] e = null;</code></li>
+                                    </li>
+                                </ul>
+                            </li>
+                    </ul>
+                </section>
+
+
 
                 <div id="pnbtn">
-                    <div id="prev"><a href="java-install.html">Previous</a></div>
+                    <div id="prev"><a href="1stapp.html">Previous</a></div>
                     <div id="next"><a href="">Next</a></div>
 
                 </div>
